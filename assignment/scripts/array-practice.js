@@ -96,14 +96,22 @@ console.log(reverseFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-let foodString = "My favorite foods are:";
-for (let food of favoriteFoods) {
-  if (food === favoriteFoods[favoriteFoods.length - 1]) {
-    foodString += food;
-  } else {
-    foodString += ` ${food.toLowerCase()} and `;
-  }
-}
+
+const toTitleCase = (string) => {
+  const words = string.split(" ");
+  const titleWords = words.map((word) => {
+    if (word[0]) {
+      const trimmedWord = word.trim();
+      return trimmedWord[0].toUpperCase() + trimmedWord.slice(1).toLowerCase();
+    }
+    return;
+  });
+
+  return titleWords.join(" ");
+};
+
+const titleFavoriteFoods = favoriteFoods.map((food) => toTitleCase(food));
+let foodString = `My favorite foods are: ${titleFavoriteFoods.join(" and ")}`;
 console.log(foodString);
 
 // 4.h (STRETCH) TODO: Make a new array that combines
