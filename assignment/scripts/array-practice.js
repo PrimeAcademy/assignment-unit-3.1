@@ -97,6 +97,8 @@ console.log(reverseFoods);
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 
+// title case function > "raspberry pie" => "Raspberry Pie"
+
 const toTitleCase = (string) => {
   const words = string.split(" ");
   const titleWords = words.map((word) => {
