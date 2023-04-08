@@ -100,13 +100,10 @@ console.log(reverseFoods);
 // title case function > "raspberry pie" => "Raspberry Pie"
 
 const toTitleCase = (string) => {
-  const words = string.split(" ");
+  const words = string.trim().split(" ");
   const titleWords = words.map((word) => {
-    if (word[0]) {
-      const trimmedWord = word.trim();
-      return trimmedWord[0].toUpperCase() + trimmedWord.slice(1).toLowerCase();
-    }
-    return;
+    const trimmedWord = word.trim();
+    return trimmedWord[0].toUpperCase() + trimmedWord.slice(1).toLowerCase();
   });
 
   return titleWords.join(" ");
