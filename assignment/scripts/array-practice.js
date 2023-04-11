@@ -38,9 +38,8 @@ console.log('Last dessert is:', 'rainbow cookie');
 
 // 3.c. (STRETCH) TODO: Log the last food by using the array length, 
 //      instead of the exact index number of the last item
-let lastFood = favoriteFoods.length[favoriteFoods.length - 1];
+let lastFood = favoriteFoods[favoriteFoods.length - 1];
 console.log(lastFood);
-// I know this is undefinied but I can't figure out why?! I've spent like 20 mins on it and have to move on :(
 
 // 4. Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
