@@ -9,12 +9,12 @@ console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
 
-let foodsArray = ['sushi', 'empanadas', 'frech fries', 'hamburgers'] 
+let foodsArray = ['sushi', 'empanadas', 'frech fries', 'hamburgers'];
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
 
-console.log('my favorite foods are: ', foodsArray)
+console.log('My favorite foods are: ', foodsArray);
 
 // 2. Array.length - tells you how many items are in the array
 console.log('number of favorite foods:', foodsArray.length);
@@ -30,14 +30,14 @@ console.log('My top foods are: ', foodsArray.length);
 console.log('My first choice is: ', foodsArray[0]);
 
 // Example: Log the first animal from the array using it's array index
-console.log('First animal is', animalArray[0])
+console.log('First animal is', animalArray[0]);
 
 // 3.a. TODO: Log the second animal in the array 
 
-console.log('Second animal is', animalArray[1])
+console.log('Second animal is', animalArray[1]);
 // 3.b. TODO: Log the last animal in the array using it's array index 
 
-console.log('Fourth animal is', animalArray[3])
+console.log('Fourth animal is', animalArray[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
@@ -96,7 +96,7 @@ console.log('My favorite foods are now', foodsArray);
 //      with another one of your favorite foods.
 //      Then log the updated array.
 
-foodsArray [1] = 'pasta'
+foodsArray [1] = 'pasta';
 console.log('My favorite foods are now:', foodsArray);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
