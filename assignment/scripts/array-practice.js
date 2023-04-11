@@ -99,3 +99,5 @@ console.log(favoriteFoods.reverse());
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let favoriteArray = [favoriteFoods + animalArray];
+console.log(favoriteArray);
